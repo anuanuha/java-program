@@ -1,0 +1,23 @@
+package divisibilitylogic;
+
+public class checkdivisibility {
+	public static void main(String[] args) {
+		int num=16;
+		String res=checkdivisibility(num);
+		System.out.println(res);
+	}
+public static  String checkdivisibility(int num) {
+	if (num%3==0 && num%5==0) {
+		return "yes";
+	}
+	else if(num%3==0) {
+		return "no";
+	}
+	else if(num%5==0) 
+	return "dude";
+	}
+	else{
+		return "invalid number";
+	}
+}
+}
