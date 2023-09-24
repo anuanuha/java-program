@@ -1,0 +1,39 @@
+package comparator;
+import java.util.Arrays;
+class employee implements Comparable<Object>{
+	int id;
+	String name;
+	int sal;
+	public employee(int id, String name, int sal) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.sal = sal;
+	}
+	@Override
+	public int compareTo(Object o) {
+		// TODO Auto-generated method stub
+		employee a= (employee)o;
+		return this.id=a.id;
+	}
+	@Override
+	public String toString() {
+		return "employee [id=" + id + ", name=" + name + ", sal=" + sal + "]";
+	}
+	
+}
+
+public class mainclass {
+	public static void main(String[] args) {
+	
+	employee e1=new employee(10,"anu",9899);
+	employee e2=new employee(1,"kavya",7867);
+	employee e3=new employee(3,"gghghv",7896);
+       employee[] Arr= {e1,e2,e3};
+       Arrays.sort(Arr);
+       for(int i=0;i<Arr.length;i++) {
+    	   System.out.println(Arr[i]);
+       }
+}
+}
+
