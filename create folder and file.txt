@@ -1,0 +1,32 @@
+package filehandling;
+import java.io.*;
+public class createfolderandfile {
+	public static void main(String[] args) throws IOException {
+		//to create new folder
+	    //File f=new File("C:\\Users\\Anu H A\\OneDrive\\Desktop\\anu");
+		//to create new file
+		//File f=new File("C:\\Users\\Anu H A\\OneDrive\\Desktop\\anu\\arunkumar.pdf");
+		//to DELETE FILE OR FOLDER  IS PRESENT OR NOT
+		//f.delete();	
+		File f =new File("C:\\Users\\Anu H A\\OneDrive\\Desktop\\anu\\arunkum.txt");
+		//FileReader FR=new FileReader(f);
+		//char[] arr=new char[(int) f.length()];
+		//FR.read(arr);
+		//for (int i = 0; i < arr.length; i++) {
+		//	System.out.print(arr[i]);
+		//}
+		// to save the previous data by defaul parameter is false that time previous data will errace when it is true save the previous
+		FileWriter fw= new FileWriter(f,true);
+		//to write data inside the file
+		fw.write("\n i am  haa\n");
+		fw.write("i am anu ha");
+		//to save the data
+		fw.flush();
+		//to close the file
+		fw.close();
+		//f.createNewFile();
+		
+	//System.out.println("done");
+
+}
+}
